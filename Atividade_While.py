@@ -18,18 +18,22 @@ n1 = print(
 sleep(2)
 n2 = int(input("Digite o numero que você arrisca ser o correto: "))
 
-x = 0
+
 x = random.randint(1, 10)
 m2 = 0
 
 
 while True:
     if x == n2:
-        print(f"Você acertou depois de tentar {m2} vezes")
+        print(
+            f"Parabens por ter vencido!! \n Você acertou depois de tentar {m2} vezes\n Vamos Jogar novamente?")
         break
 
     else:
-        print("Você errou , digite novamente")
+        if n2 < x:
+            print("Você errou, chute mais alto ")
+        else:
+            print("Você errou, chute mais baixo")
         m2 = m2 + 1
         n2 = int(input("Digite o numero que você arrisca ser o correto: "))
         print(x)
