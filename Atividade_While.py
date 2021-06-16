@@ -36,4 +36,3 @@ while True:
             print("Você errou, chute mais baixo")
         m2 = m2 + 1
         n2 = int(input("Digite o numero que você arrisca ser o correto: "))
-        print(x)
