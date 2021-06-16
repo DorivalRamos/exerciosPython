@@ -53,14 +53,15 @@
 from time import sleep
 print("Por favor digite seu Sexo [M/F] e sua idade e no final eu irei mostrar Quantas foras as maiores de idade, quantos  eram homens e quantas mulheres tem menos de 20 anos")
 
-while true:
+while True:
     n1 = int()
     n2 = int()
     n3 = int()
     p1 = str(input("Qual o seu sexo: ").upper().split()[0])
     sleep(2)
     p2 = int(input("Qual a sua idade?: "))
-    P3 = str(input("Deseja continuar ?[S/N]: "))
+    sleep(2)
+    p3 = str(input("Deseja continuar ?[S/N]: "))
 
     if p2 > 18:
         n1 = n1 + 1
@@ -69,4 +70,9 @@ while true:
     if p1 == 'F' and p2 < 20:
         n3 = n3 + 1
 
-    if p3 == 'N'
+    if p3 == 'N':
+        print(f'''
+        {n1} Pessoas tem mais de 18 anos de idade\n
+        {n2} Homens foram cadastrados\n
+        {n3} Mulheres com mais de 18 anos de idade
+      ''')
