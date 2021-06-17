@@ -26,13 +26,11 @@
 # lista = [5, 7, 2, 9, 4, 1, 3]
 # print(f'''
 #   a) tamanho da lista {len(lista)}\n
-#   b) maior valor da lista {sorted(lista)[-1]}\n
-#   c) menor valor da lista {sorted(lista)[0]}\n
-#   d) soma de todos os elementos da lista {sum(lista)}
-#   \n
+#   b) maior valor da lista {max(lista)}\n
+#   c) menor valor da lista {min(lista)}\n
+#   d) soma de todos os elementos da lista {sum(lista)}\n
 #   e) lista em ordem crescente {sorted(lista)}\n
 #   f) lista em ordem decrescente {sorted(lista)[::-1]}
-
 #   ''')
 
 # Exercicio 2
@@ -55,3 +53,21 @@
 #     print(
 #         "Cúmplice"
 #     )
+
+# Exercicio 2 resolução mais limpa
+
+# l = list()
+
+# p = ["Telefonou para a vítima?[S/N] : ",
+#      "Esteve no local do crime?[S/N] : ",
+#      "Mora perto da vítima?[S/N] : ",
+#      "Devia para a vítima?[S/N] : ",
+#      "Já trabalhou com a vítima?[S/N] : ", ]
+
+# r = ["inocente", "Suspeita", "Cúmplice", "Cúmplice", "Assassino"]
+
+# for pergunta in p:
+#     l.append(int(input(pergunta).strip().upper()[
+#              0].replace("S", "1").replace("N", "0")))
+
+# print(f"O individuo é : {r[sum(l) -1]}")
