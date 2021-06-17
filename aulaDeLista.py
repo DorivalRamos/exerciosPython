@@ -28,7 +28,7 @@
 #   a) tamanho da lista {len(lista)}\n
 #   b) maior valor da lista {sorted(lista)[-1]}\n
 #   c) menor valor da lista {sorted(lista)[0]}\n
-#   d) soma de todos os elementos da lista
+#   d) soma de todos os elementos da lista {sum(lista)}
 #   \n
 #   e) lista em ordem crescente {sorted(lista)}\n
 #   f) lista em ordem decrescente {sorted(lista)[::-1]}
