@@ -22,7 +22,7 @@
 # for posição, valor in enumerate(a):
 #   print(f"A posição de {valor} é a {posição}")
 
-
+# Exercicio 1
 # lista = [5, 7, 2, 9, 4, 1, 3]
 # print(f'''
 #   a) tamanho da lista {len(lista)}\n
@@ -35,6 +35,7 @@
 
 #   ''')
 
+# Exercicio 2
 # lista = ("Telefonou para a vítima?", "Esteve no local do crime?",
 #          "Mora perto da vítima?", "Devia para a vítima?", "Já trabalhou com a vítima?")
 # n2 = int()
