@@ -59,9 +59,9 @@ while True:
     n3 = int()
     p1 = str(input("Qual o seu sexo: ").upper().split()[0])
     sleep(2)
-    p2 = int(input("Qual a sua idade?: "))
+    p2 = int(input("Qual a sua idade?: ")).upper().split()
     sleep(2)
-    p3 = str(input("Deseja continuar ?[S/N]: "))
+    p3 = str(input("Deseja continuar ?[S/N]: ")).upper().split()
 
     if p2 > 18:
         n1 = n1 + 1
