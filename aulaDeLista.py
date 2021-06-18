@@ -56,18 +56,17 @@
 
 # Exercicio 2 resolução mais limpa
 
-# l = list()
-
+# culpa = int()
 # p = ["Telefonou para a vítima?[S/N] : ",
 #      "Esteve no local do crime?[S/N] : ",
 #      "Mora perto da vítima?[S/N] : ",
 #      "Devia para a vítima?[S/N] : ",
 #      "Já trabalhou com a vítima?[S/N] : ", ]
 
-# r = ["inocente", "Suspeita", "Cúmplice", "Cúmplice", "Assassino"]
+# r = ["inocente", "inocente", "Suspeita", "Cúmplice", "Cúmplice", "Assassino"]
 
 # for pergunta in p:
-#     l.append(int(input(pergunta).strip().upper()[
-#              0].replace("S", "1").replace("N", "0")))
-
-# print(f"O individuo é : {r[sum(l) -1]}")
+#     n = input(p[0]).strip().lower()
+#     if n.startswith("s"):
+#         culpa += 1
+# print(f"O individuo é : {r[culpa]}")
