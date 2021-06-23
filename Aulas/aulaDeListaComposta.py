@@ -52,16 +52,16 @@
 # Mostre o menor peso
 
 
-galera = list()
-minPeso = maxPeso = 0
+pessoas = list()
+peso = list()
 while True:
-    nome = str(input("Digite o nome da pessoa: "))
-    peso = int(input("Digite o peso: "))
-    galera.append([nome, peso])
+    pessoas.append(str(input("Digite o nome da pessoa: ")))
+    peso.append(int(input("Digite o peso: ")))
+
     parar = str(input("Deseja parar ?[S/N}").upper())
     if parar.startswith('S'):
         break
 
-for c in enumerate(galera):
-    print(f"Quantas pessoas foram cadastradas? {len(galera)}")
-    print(f"{min(galera[1])}")
+print(f'''Quantas pessoas foram cadastradas? {len(pessoas)} Pessoas
+Qual o menor peso ? {min(peso)}
+Qual o maior peso ? {max(peso)} ''')
