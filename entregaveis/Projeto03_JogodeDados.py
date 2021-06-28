@@ -21,17 +21,17 @@ for contador in range(1, rodadas + 1):
     lAposta['jogador2'] = randint(1, 7)
     lAposta['jogador3'] = randint(1, 7)
     lAposta['jogador4'] = randint(1, 7)
-    ################################
-    if lAposta['jogador1'] > lAposta['jogador2'] and lAposta['jogador1'] > lAposta['jogador3'] and lAposta['jogador1'] > lAposta['jogador4']:
+    # Condicional criada para determinar o ganhador da rodada
+    if lAposta['jogador2'] < lAposta['jogador1'] > lAposta['jogador3'] and lAposta['jogador1'] > lAposta['jogador4']:
         situacao = 'jogador1'
         jogador1 += 1
-    elif lAposta['jogador2'] > lAposta['jogador1'] and lAposta['jogador2'] > lAposta['jogador3'] and lAposta['jogador2'] > lAposta['jogador4']:
+    elif lAposta['jogador1'] < lAposta['jogador2'] > lAposta['jogador3'] and lAposta['jogador2'] > lAposta['jogador4']:
         situacao = 'jogador 2'
         jogador2 += 1
-    elif lAposta['jogador3'] > lAposta['jogador1'] and lAposta['jogador3'] > lAposta['jogador2'] and lAposta['jogador3'] > lAposta['jogador4']:
+    elif lAposta['jogador1'] < lAposta['jogador3'] > lAposta['jogador2'] and lAposta['jogador3'] > lAposta['jogador4']:
         situacao = 'jogador 3'
         jogador3 += 1
-    elif lAposta['jogador4'] > lAposta['jogador1'] and lAposta['jogador4'] > lAposta['jogador2'] and lAposta['jogador4'] > lAposta['jogador3']:
+    elif lAposta['jogador1'] < lAposta['jogador4'] > lAposta['jogador2'] and lAposta['jogador4'] > lAposta['jogador3']:
         situacao = 'jogador 4'
         jogador4 += 1
     # Essa variavel serve para determinar a quantidade de empates
