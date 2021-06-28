@@ -35,24 +35,24 @@
 # for k, v in aluno.itens():
 #     print(f"{k} é igual a {v}")
 
-import datetime
+# import datetime
 
-trabalhador = dict()
-trabalhador['nome'] = str(input("Digite seu nome: "))
-trabalhador['idade'] = int(
-    input(f"{trabalhador['nome']} digite o seu ano de nascimento: "))
-trabalhador['ctps'] = int(
-    input(f"{trabalhador['nome']} digite o seu ctps, caso não tenha digite 0 : "))
-trabalhador.setdefault('contratação', 35)
+# trabalhador = dict()
+# trabalhador['nome'] = str(input("Digite seu nome: "))
+# trabalhador['idade'] = int(
+#     input(f"{trabalhador['nome']} digite o seu ano de nascimento: "))
+# trabalhador['ctps'] = int(
+#     input(f"{trabalhador['nome']} digite o seu ctps, caso não tenha digite 0 : "))
+# trabalhador.setdefault('contratação', 35)
 
 
-if trabalhador['ctps'] != 0 or None:
-    trabalhador['contratação'] = int(
-        input(f"{trabalhador['nome']} digite o ano de contratação: "))
-    salario = int(input(f"{trabalhador['nome']} digite seu salario: R$"))
+# if trabalhador['ctps'] != 0 or None:
+#     trabalhador['contratação'] = int(
+#         input(f"{trabalhador['nome']} digite o ano de contratação: "))
+#     salario = int(input(f"{trabalhador['nome']} digite seu salario: R$"))
 
-print(f''' 
-Você {trabalhador['nome']},
-Possue {trabalhador['idade'] - datetime.y} anos,
-você vai se aposentar com {trabalhador['idade'] - datetime.year} + {trabalhador['contratação'] - datetime.year} + 35 anos 
-''')
+# print(f'''
+# Você {trabalhador['nome']},
+# Possue {trabalhador['idade'] - datetime.y} anos,
+# você vai se aposentar com {trabalhador['idade'] - datetime.year} + {trabalhador['contratação'] - datetime.year} + 35 anos
+# ''')

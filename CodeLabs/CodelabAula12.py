@@ -83,31 +83,76 @@
 # D) Uma lista com as idades que estão acima da média.
 # OBS: O programa deve garantir que o sexo digitado seja válido, e que quando perguntar ao usuário se deseja continuar a resposta seja somente sim ou não.
 
-from time import sleep
+# povo = list()
 
-dictPessoa = dict()
-listPessoa = list()
+# while True:
+#     pessoa = dict()
+#     pessoa['nome'] = input('Digite o nome: ')
+#     pessoa['sexoBiologico'] = input(
+#         'Digite o sexo biológico: [M/F] ').strip().upper()[0]
 
-while True:
-    dictPessoa['nome'] = str(input("Digite seu nome: "))
-    dictPessoa['sexo'] = str(
-        input(f"{dictPessoa['nome']} digite o seu sexo [M/F]: ")).upper().split()[0]
-    dictPessoa['idade'] = int(
-        input(f"{dictPessoa['nome']} digite sua idade: "))
-    parar = str(input("Você deseja para ?[S/N]: ")).upper()
+#     while pessoa['sexoBiologico'] not in 'MF':
+#         pessoa['sexoBiologico'] = input(
+#             'Opção inválida. Digite o sexo biológico: [M/F] ').strip().upper()[0]
+#     if pessoa['sexoBiologico'] == 'M':
+#         pessoa['sexoBiologico'] = 'masculino'
+#     else:
+#         pessoa['sexoBiologico'] = 'feminino'
+#     pessoa['idade'] = int(input('Digite a idade: '))
+#     povo.append(pessoa)
+#     continuar = input('Quer continuar cadastrando? [S/N] ').strip().upper()[0]
 
-    print(dictPessoa['sexo'])
+#     while continuar not in 'SN':
+#         continuar = input(
+#             'Opção inválida. Quer continuar cadastrando? [S/N] ').strip().upper()[0]
+#     if continuar == 'N':
+#         break
 
-    while (dictPessoa['sexo'] != 'M') and (dictPessoa['sexo'] != 'F'):
-        dictPessoa['sexo'] = str(input("Por favor Digite o sexo certo [M/F]"))
-        print(dictPessoa['sexo'])
+# media = 0
+# mulheres = list()
+# for pessoa in povo:
+#     media += pessoa['idade']/len(povo)
+#     if pessoa['sexoBiologico'] == 'feminino':
+#         mulheres.append(pessoa['nome'])
 
-    listPessoa.append(dictPessoa.copy())
-    if parar.startswith('S'):
-        break
-print(f'''
-Quantas pessoas estão cadastradas {len(listPessoa)}
-A média da idade. {sum(listPessoa['idade']) / len(listPessoa['idade'])}
+# acimaMedia = list()
+# for pessoa in povo:
+#     if pessoa['idade'] > media:
+#         acimaMedia.append(pessoa['idade'])
+
+# print(f'''
+# Estão cadastradas {len(povo)} pessoas.
+# A média de idade cadastrada é {media:.2f} anos.
+# Lista de mulheres: {mulheres}
+# Lista de idades acima da média: {acimaMedia}
+# ''')
 
 
-''')
+# 6°Desafio
+# classe = list()
+
+# for i in range(15):
+#     aluno = dict()
+#     aluno['nome'] = input('Digite o nome: ').capitalize()
+#     aluno['notas'] = list()
+#     media = 0
+#     for j in range(5):
+#         nota = float(input(f'Digite a {j+1}ª nota '))
+#         aluno['notas'].append(nota)
+#         media += nota/5
+#     aluno['media'] = round(media, 2)
+#     if aluno['media'] >= 7:
+#         aluno['situacao'] = 'aprovado'
+#     elif 5 <= aluno['media'] < 7:
+#         aluno['situacao'] = 'recuperação'
+#     else:
+#         aluno['situacao'] = 'reprovado'
+#     classe.append(aluno)
+
+# print()
+
+# print(f'{"Nome":^25} {"Notas":^25} {"Média":^25} {"Situação":^25}')
+# for aluno in classe:
+#     notas = ", ".join([str(n) for n in aluno['notas']])
+#     print(
+#         f'{aluno["nome"]:^25} {notas:^25} {aluno["media"]:^25} {aluno["situacao"]:^25}')
