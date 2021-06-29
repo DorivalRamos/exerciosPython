@@ -34,6 +34,8 @@ for contador in range(1, rodadas + 1):
     elif lAposta['jogador1'] < lAposta['jogador4'] > lAposta['jogador2'] and lAposta['jogador4'] > lAposta['jogador3']:
         situacao = 'jogador 4'
         jogador4 += 1
+    else:
+        situacao = 'Empate'
     # Essa variavel serve para determinar a quantidade de empates
     empates = contador - (jogador1+jogador2+jogador3+jogador4)
     # Esse comando serve para ordernar o Dict em ordem crescente, com o uso do .itemgetter(), posso selecionar o item que vai ser ordenado
@@ -42,15 +44,22 @@ for contador in range(1, rodadas + 1):
     # Comando usado para criar uma copia do Dict em Uma Lista
     aposta.append(sortedResult)
     ###########################
-# for c in aposta:  ##Caso você queira ver o resultado das rolagens
-#     print(f'{c}')
+    print(f'''
+            O ganhador da rodada foi
+                    {situacao}
+                    {sorted(
+        lAposta.items(), key=operator.itemgetter(1), reverse=True)}
+
+    ''')
+    sleep(1)
+
 if jogador2 < jogador1 > jogador3 and jogador1 > jogador4:
-    print(f'O campeão foi o Jogador 1 com {jogador1} Vitorias')
+    print(f'        O campeão foi o Jogador 1 com {jogador1} Vitorias')
 elif jogador1 < jogador2 > jogador3 and jogador2 > jogador4:
-    print(f'O campeão foi o Jogador 2 com {jogador2} Vitorias')
+    print(f'        O campeão foi o Jogador 2 com {jogador2} Vitorias')
 elif jogador1 < jogador3 > jogador2 and jogador3 > jogador4:
-    print(f'O campeão foi o Jogador 3 com {jogador3} Vitorias')
+    print(f'        O campeão foi o Jogador 3 com {jogador3} Vitorias')
 elif jogador1 < jogador4 > jogador2 and jogador4 > jogador3:
-    print(f'O campeão foi o Jogador 4 com {jogador4} Vitorias')
+    print(f'        O campeão foi o Jogador 4 com {jogador4} Vitorias')
 else:
-    print("Não houve campeão o resultado terminou em empate")
+    print("         Não houve campeão o resultado terminou em empate")
