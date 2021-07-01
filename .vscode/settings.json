@@ -1,9 +1,10 @@
 {
   "python.pythonPath": "C:\\Users\\Principe Sayajin\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
   "python.testing.pytestArgs": [
-    "."
+    "entregaveis"
   ],
   "python.testing.unittestEnabled": false,
   "python.testing.nosetestsEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": false,
+  "python.testing.promptToConfigure": false
 }

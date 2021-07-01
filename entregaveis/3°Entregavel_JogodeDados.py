@@ -8,6 +8,7 @@
 from random import randint
 from time import sleep
 import operator
+
 aposta = list()
 
 jogador1 = jogador2 = jogador3 = jogador4 = int(0)
@@ -62,4 +63,4 @@ elif jogador1 < jogador3 > jogador2 and jogador3 > jogador4:
 elif jogador1 < jogador4 > jogador2 and jogador4 > jogador3:
     print(f'        O campeão foi o Jogador 4 com {jogador4} Vitorias')
 else:
-    print("         Não houve campeão o resultado terminou em empate")
+    print("         Não houve campeão, o resultado terminou em empate")
