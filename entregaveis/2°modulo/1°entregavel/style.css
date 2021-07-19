@@ -1,0 +1,55 @@
+body{
+    background-image: url("imagens/arcadeNeon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /*Alteração*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.principal{
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(5, 185, 5);
+    margin-top: 5ex;   
+    box-shadow: inset 0 0 1em rgb(25, 0, 255), 0 0 1em red;
+    border-radius: 5ex;
+
+}
+
+.principal p{
+    width: 70%;
+}
+
+.img{
+    width: 55ex;
+    margin-top: 5ex;
+}
+
+.divImagem{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botão{
+    box-shadow: rgb(9 27 192) 1px 0px 55px 20px, inset rgb(5 7 156 / 97%) 0px -20px 20px 0px, rgb(8 7 97) 0px 4px 6px, rgb(0 0 0 / 62%) 0px 12px 13px, rgb(17 3 216) 0px -3px 5px;
+    font-size: 3ex;
+    background-color: transparent;
+    border: none;
+    color: #f5deb391
+}
+
+#imagem{
+    margin-bottom: 3ex
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregavel 1°</title>
+</head>
+
+<body>
+    <div class=principal>
+        <h2>Para o primeiro projeto irei mostrar o Saitama!!!</h2>
+        <div class="texto"> 
+           <h3>Personagem da Obra One-Punch Man</h3>
+           <img  class="img" src="imagens/saitama_before_training_by_iheesh_dbh7rw0-fullview.jpg" alt="">
+            
+        </div>
+
+        <div class="divImagem">
+            
+            <p> Este Personagem decidiu se tornar um Héroi por Hobbie, com um treinamento de 100 flexões, 100 abdominais,
+            100 agachamentos e corrida de 10km todos os dias, após 2 anos de treio Saitama perde todo seu cabelo e
+            se torna o Carequinha da Capa Branca</p>
+            
+            
+            
+            <button class="botão" type="button" onclick="trocar_imagem()">Trocar de Humor </button>
+
+            <img  id="imagem" class="img" src="imagens/giphy.gif" alt="">
+
+           
+        </div>
+        
+        
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    n = 2
+
+    function trocar_imagem() {
+
+        for (var cont = 0; cont < n; cont++) {
+
+            if (n / 2 == 1) {
+                document.getElementById("imagem").src = 'imagens/tenor1.gif';
+                console.log('ok1')
+            } else if (n / 3 == 1) {
+                document.getElementById("imagem").src = 'imagens/tenor2.gif';
+                console.log('ok2')
+            } else if (n / 4 == 1) {
+                document.getElementById("imagem").src = 'imagens/giphy1.gif';
+                console.log('ok3')
+            } else if (n >= 5) {
+                document.getElementById("imagem").src = 'imagens/giphy.gif';
+                n = 1
+            }
+
+        }
+        n++;
+    }
+</script>
