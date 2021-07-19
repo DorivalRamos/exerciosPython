@@ -14,17 +14,23 @@
         <h2>Para o primeiro projeto irei mostrar o Saitama!!!</h2>
         <div class="texto"> 
            <h3>Personagem da Obra One-Punch Man</h3>
+           <img  class="img" src="imagens/saitama_before_training_by_iheesh_dbh7rw0-fullview.jpg" alt="">
             
         </div>
 
         <div class="divImagem">
-            <img src="saitama_before_training_by_iheesh_dbh7rw0-fullview.jpg" class="imgSaitama" alt="">
+            
             <p> Este Personagem decidiu se tornar um Héroi por Hobbie, com um treinamento de 100 flexões, 100 abdominais,
-            100 agachamentos e corrida de 10km todos os dias, após todo esse treinamento, Saitama perde todo seu cabelo e
-            se torna o héroi de um soco só</p>
+            100 agachamentos e corrida de 10km todos os dias, após 2 anos de treio Saitama perde todo seu cabelo e
+            se torna o Carequinha da Capa Branca</p>
+            
+            
+            
             <button class="botão" type="button" onclick="trocar_imagem()">Trocar de Humor </button>
 
-            <img class="imagem" id="imagem" src="giphy.gif" ;> <br> </img>
+            <img  id="imagem" class="img" src="imagens/giphy.gif" alt="">
+
+           
         </div>
         
         
@@ -43,16 +49,16 @@
         for (var cont = 0; cont < n; cont++) {
 
             if (n / 2 == 1) {
-                document.getElementById("imagem").src = 'tenor.gif';
+                document.getElementById("imagem").src = 'imagens/tenor1.gif';
                 console.log('ok1')
             } else if (n / 3 == 1) {
-                document.getElementById("imagem").src = 'tenor2.gif';
+                document.getElementById("imagem").src = 'imagens/tenor2.gif';
                 console.log('ok2')
             } else if (n / 4 == 1) {
-                document.getElementById("imagem").src = 'giphy2.gif';
+                document.getElementById("imagem").src = 'imagens/giphy1.gif';
                 console.log('ok3')
             } else if (n >= 5) {
-                document.getElementById("imagem").src = 'giphy.gif';
+                document.getElementById("imagem").src = 'imagens/giphy.gif';
                 n = 1
             }
 
