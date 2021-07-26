@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Lista de Afazeres</title>
+</head>
+
+<body>
+    <header id=header>
+        <h1>Titulo{{nomeLista}}</h1>
+        <form id="formulario" action="/nova" method="POST">
+            <label for="item">Nova Tarefa</label>
+            <input type="text" name="item" id="item">
+            <button type="submit">Adicionar</button>
+
+
+
+        </form>
+    </header>
+
+    <section>
+        <ul>
+            {% for item in itens %}
+            <li class="itens">{{item}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- <div id="conteudo">
+        {% if listaPronta %}
+            <h1>{{nomeLista}}</h1>
+        {% else%}
+            <h1>A lista não esta pronta</h1>
+        {% endif %}    
+        
+    </div> -->
+</body>
+
+</html>
